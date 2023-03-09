@@ -6,29 +6,51 @@
   text-decoration: none !important;
 }
 
+body > nav.navbar{
+  background: rgba(3, 3, 37, 0.98) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* added box-shadow */
+
+}
+
+/*
+
+nav.navbar>.container > .collapse> ul > li.nav-item> a.nav-link{
+  color: white !important; 
+  font-size: large;
+}
+
+nav.navbar>.container > .collapse> ul > li.nav-item.active> a.nav-link{
+  color: white !important;
+  font-size: large;
+  text-decoration: underline red;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+  transition: text-decoration 0.9s ease-in-out;
+}
+
 /* Font Awesome Icons have variable width. Added fixed width to fix that.*/
 .icon-width {
   width: 2rem;
 }
 
 .hero-content {
-  background-color: #0f2f56;
+  background: rgba(3, 3, 37, 0.98) ;
 }
 
 .hero-text {
-  color: #ececd8;
+  color: #fdf0d5;
 }
 
 .hero-container>.container-fluid>.row.d-flex>.col-lg-6>.px-5.py-5.mt-5>.px-2.py-2>.btn-banner {
   height: 40px;
   border-radius: 4px;
-  color: #0f2f56;
+  color: rgba(3, 3, 37, 0.98) ;
   background-color: white;
-  border: 1px solid #ff2f4f;
+  border: 1px solid #c1121f;
 }
 
 .hero-container>.container-fluid>.row.d-flex>.col-lg-6>.px-5.py-5.mt-5>.px-2.py-2>.btn-banner:hover {
-  background-color: #ff2f4f;
+  background-color: #c1121f;
 }
 
 .hero-container>.container-fluid>.row.d-flex>.col-lg-6>.px-5.py-5.mt-5>.px-2.py-2>.btn-banner:focus {
@@ -40,44 +62,96 @@
   border: none;
 }
 
-#clients {
-  background-color: #0f2f56;
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+
+section#serve{
+  float:left;
+  width:100%;
+  padding:30px 0; 
+  position:relative; 
+  overflow:hidden; 
+  background:#6F8D8A;
+  margin: 30px;
 }
+
+section#serve:before{
+  content:"";
+  position:absolute; 
+  width:110%; 
+  height:100%;   
+  background-color:#fff; 
+  filter: blur(10px); 
+  z-index:0; 
+  transform: scale(2);-ms-transform: scale(2); 
+  -webkit-transform: scale(2);
+}
+
+.btn-default{
+  background:#006EFF; width: 100%; color:#fff; font-weight:700; text-shadow:1px 1px 0 rgba(0,0,0,0.2); font-size:14px;
+}
+.card{
+  box-shadow:2px 2px 20px rgba(0,0,0,0.3); border:none; margin-bottom:30px;
+}
+.card:hover{
+  transform: scale(1.05);
+  transition: all 1s ease;
+  z-index: 999;
+}
+.card-01 .card-body{
+  position:relative; padding-top:40px;
+}
+.card-01 .badge-box{
+  position:absolute; 
+  top:-20px; left:50%; width:100px; height:100px;margin-left:-50px; text-align:center;
+}
+.card-01 .badge-box i{
+  background:#006EFF; color:#fff; border-radius:50%;  width:50px; height:50px; line-height:50px; text-align:center; font-size:20px;
+}
+.card-01 .height-fix{
+  height:455px; overflow:hidden;
+}
+
+.card-01 .height-fix .card-img-top{width:auto!important;}
+
+#clients {
+  background: rgba(3, 3, 37, 0.98) ;
+}
+
 
 #clients>h1 {
   padding-top: 40px;
   padding-bottom: 40px;
-  color: #ececd8;
+  color: #fdf0d5;
 }
 
 #clients>.row.d-flex.justify-content-center>.col-md-3>.card {
-  background-color: #ececd8;
-
+  background-color: #0C3361;
+  color: #fff;
 
 }
 
 .client {
   width: 100%;
   height: 100%;
-  background: #0f2f5627;
+  background: rgba(3, 3, 37, 0.98) ;
   /* fallback for old browsers */
 }
 
 .carousel-icon i {
   font-size: 5rem;
-  color: #ececd8;
+  color: #0C3361;
 }
 
 .carousel-item i {
   font-size: 1.6rem;
-  color: #0f2f56;
+  color: rgba(3, 3, 37, 0.98) ;
 }
 
 .t-card {
   padding: 1.8125rem 1.125rem;
-  background-color: #ececd8a0;
+  background-color: #0C3361;
   border-radius: 1.25rem;
-  color: #0f2f56;
+  color: #fff;
   height: auto;
 }
 
@@ -98,7 +172,7 @@
   line-height: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #34495e;
+  color: #003049;
   font-weight: 800;
   text-align: center;
 }
@@ -107,7 +181,7 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 2px;
-  color: #34495e;
+  color: #003049;
   text-align: center;
 }
 
@@ -137,7 +211,7 @@
 .subscribe_form button {
   border: none;
   height: 44px;
-  background-color: #ff2f4f;
+  background-color: #c1121f;
   color: #fff;
   margin: -1px;
   border-radius: 0;
@@ -156,7 +230,7 @@
 .subscribe_form button:active,
 .subscribe_form button:visited {
   color: #fff;
-  background-color: #ff2f4f;
+  background-color: #c1121f;
   outline: none;
   transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
@@ -209,7 +283,7 @@ h1,
         a,
         a:active,
         a:focus {
-            color: #0f2f56;
+            color: #003049;
             text-decoration: none;
             transition-timing-function: ease-in-out;
             -ms-transition-timing-function: ease-in-out;
@@ -232,7 +306,7 @@ h1,
     max-width: 100%;
     height: auto;
 }.footer-section {
-  background-color: #0f2f56;
+  background-color: rgba(3, 3, 37, 0.98);
   position: relative;
   overflow: hidden;
   z-index: 9;
@@ -314,7 +388,7 @@ h1,
   font-weight: 400;
 }
 .courses-link-list li a:hover {
-  color: #ff2f4f;
+  color: #c1121f;
 }
 .courses-link-list li i {
   margin-right: 5px;
@@ -325,7 +399,7 @@ h1,
   font-weight: 400;
 }
 .small-post-item .post-date {
-  color: #ff2f4f;
+  color: #c1121f;
   margin-bottom: 3px;
   font-family: var(--para-font);
   font-weight: 400;
@@ -349,7 +423,7 @@ h1,
 .news-letter-form input[type="submit"] {
   width: auto;
   border: none;
-  background-color: #ff2f4f;
+  background-color: #c1121f;
   padding: 9px 30px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -367,7 +441,7 @@ h1,
   color: #ffffff;
 }
 .copy-right-text a {
-  color: #ff2f4f;
+  color: #c1121f;
 }
 .terms-privacy li+li {
   margin-left: 30px;
